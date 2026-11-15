@@ -7,6 +7,8 @@ const PORT = 3000;
 // Membaca data JSON dari request
 app.use(express.json());
 
+app.use(express.static("public"));
+
 // Daftar paket internet awal
 const paket = [
     {
@@ -29,12 +31,7 @@ const paket = [
     }
 ];
 
-// GET: Halaman utama
-app.get('/', (req, res) => {
-    res.json({
-        message: 'Web Service UTS berhasil berjalan!'
-    });
-});
+
 
 // GET: Menampilkan semua paket
 app.get('/api/paket', (req, res) => {

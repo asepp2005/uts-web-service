@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pilih paket internet sesuai kebutuhanmu di PaketKu.">
+    <title>PaketKu - Pilihan Paket Internet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#beranda" class="logo">
+                <span class="logo-icon">◉</span> Paket<span class="logo-blue">Ku.</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#beranda" class="nav-link active">⌂ Beranda</a>
+                <a href="#daftar-paket" class="nav-link">▱ Paket Internet</a>
+                <a href="#tentang" class="nav-link">ⓘ Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="beranda">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="hero-badge">⚡ INTERNET LEBIH MUDAH</p>
+
+                    <h1>
+                        Pilih Paket Internet
+                        <span>Andalanmu.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Berbagai pilihan paket internet dengan kuota besar,
+                        harga terjangkau, dan aktivasi cepat.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#daftar-paket" class="button button-light">
+                            🚀 Lihat Paket
+                        </a>
+
+                        <a href="#tentang" class="button button-outline">
+                            ⓘ Pelajari Lebih Lanjut
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ilustrasi smartphone menggunakan HTML dan CSS -->
+                <div class="hero-visual">
+                    <div class="floating-icon signal-icon">▥</div>
+                    <div class="floating-icon wifi-icon">◉</div>
+                    <div class="floating-icon network-icon">4G/5G</div>
+
+                    <div class="phone">
+                        <div class="phone-speaker"></div>
+
+                        <div class="phone-screen">
+                            <p class="phone-brand">◉ PaketKu.</p>
+
+                            <div class="phone-main-icon">⌁</div>
+                            <h3>Paket Internet</h3>
+
+                            <div class="phone-feature">✓ Kuota Besar</div>
+                            <div class="phone-feature">✓ Harga Terjangkau</div>
+                            <div class="phone-feature">✓ Aktivasi Cepat</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- KEUNGGULAN -->
+        <section class="benefits container" id="tentang">
+            <div class="benefit-item">
+                <div class="benefit-icon">⌁</div>
+                <div>
+                    <h3>Koneksi Stabil</h3>
+                    <p>Internet lancar di mana saja</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-icon">ϟ</div>
+                <div>
+                    <h3>Aktivasi Cepat</h3>
+                    <p>Paket langsung aktif</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <div>
+                    <h3>Harga Terjangkau</h3>
+                    <p>Banyak pilihan sesuai kebutuhan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- KATALOG PAKET DARI REST API -->
+        <section class="catalog container" id="daftar-paket">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">━ PILIHAN UNTUKMU</p>
+                    <h2>Katalog Paket Internet</h2>
+                    <p class="section-description">
+                        Pilih paket sesuai kebutuhan dan anggaranmu.
+                    </p>
+                </div>
+
+                <button id="refresh-btn" class="refresh-button" type="button">
+                    ↻ Muat Ulang
+                </button>
+            </div>
+
+            <div id="status" class="status" role="status">
+                Memuat paket internet...
+            </div>
+
+            <!-- JavaScript mengisi kartu dari /api/paket -->
+            <div id="paket-list" class="package-grid"></div>
+        </section>
+
+        <!-- BANNER PROMOSI -->
+        <section class="promo-section container">
+            <div class="promo-banner">
+                <div class="promo-content">
+                    <span class="promo-label">✨ PAKET INTERNET PILIHAN</span>
+
+                    <h2>Internetan Lebih Mudah dengan PaketKu!</h2>
+
+                    <p>
+                        Temukan paket internet yang sesuai dengan kebutuhan
+                        dan anggaranmu. Pilih paket favoritmu sekarang.
+                    </p>
+
+                    <a href="#daftar-paket" class="promo-button">
+                        Lihat Semua Paket →
+                    </a>
+                </div>
+
+                <div class="promo-visual" aria-hidden="true">
+                    <div class="promo-circle">
+                        <span class="promo-phone">▯</span>
+                        <span class="promo-wifi">⌁</span>
+                        <span class="promo-sparkle">✦</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#beranda" class="logo footer-logo">
+                ◉ PaketKu.
+            </a>
+
+            <p>Web Service Manajemen Paket Internet</p>
+            <p>Node.js · Express.js · REST API</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
